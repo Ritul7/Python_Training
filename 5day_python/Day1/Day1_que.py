@@ -96,4 +96,27 @@ else:
     # Pyenv
     # CLA (arguments)
 
+## CPU Bound Tasks: Processes which requires more CPU time, spends more time in the running state.
+## I/O Bound Tasks: Processes which requires more I/O time, spends mosre time in waiting state.
+'''
+- CPU is much faster than i/o devices, so if a process starts doing i/o, so CPU should not sit idle and it must be provided with some other process to optimally utilize it.
+
+- States of a Process:
+    1.New 2.Ready 3.Running 4.Blocked/Waiting 5.Exit/Terminate
+
+- Multiprogramming: Keeping multiple programs in the main memory at the same time, ready for execution.
+
+- Multiprocessing: A computer using multiple CPUs at one time.
+
+** Multiprocessing and Multithreading are the ways to achieve multitasking.
+
+- Multitasking: RUnning multiple tasks(application) on CPU at one time. CPU shares it memory among them and Requires context switching.
+
+- Multithreading: A technique where process is divided into smaller execution units called threads, which runs concurrently. Multithreading allows multiple threads to share CPU memory, I/o resources at of a single process.
+    - - Multithreading is achieved by concurrency, not parallelism.
+
+
+
+
+'''
 
