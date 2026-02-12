@@ -2,10 +2,12 @@ FROM python:3.12-slim
 
 WORKDIR /myproject
 
-COPY . .
+COPY requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN pip install --no cache-dir -r requirements.txt
 
-EXPOSE 5001
+COPY . . 
 
-CMD ["python3", "manage.py", "runserver"]
+EXPOSE 8000
+
+CMD ["python3", "manage.py", "runserver", "5000:8000"]
